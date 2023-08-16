@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "Streamy Watch Together",
+  "version": "1.0",
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://www.flixtor.to/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["webRequest", "storage", "activeTab"]
+}

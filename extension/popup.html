@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Streamy Watch Together</title>
+    <style>
+        body {
+            width: 300px; /* increased width for better display */
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .inviteLink {
+            display: none; /* Initially hidden, will be shown when session is created */
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h4>Streamy Watch Together</h4>
+    <button id="createSession">Create Session</button>
+    <div id="sessionIdDisplay"></div>
+
+    <!-- Invite section -->
+    <div class="inviteLink">
+        <strong>Invite Link:</strong>
+        <textarea id="inviteURL" readonly></textarea>
+        <!-- Textarea to make it easier for users to copy the link -->
+    </div>
+
+</body>
+<script src="popup.js"></script>
+
+</html>
